@@ -5,3 +5,7 @@ This python code is to replicate the results of the paper "L. Spadafora, M. Dubr
 # Code 
 PdfFitter.py: the class try to compute the fitting parameters of the target distribution and also produces the fitting error
 LucaSpadafora2013.py: the main class for the algorithm, implementing the methodology from the paper.
+GetObservationFromDb.py: get data utility functions
+
+# Data
+The data is imported from an internal database and cached as cache_axid.txt file. If different data source is used, one can either replace the content of cache_1692.txt file (like a hacking) or rewrite the function get_data_from_dataid() in GetObservationFromDb.py with your own implementation. The test in performed on IBM stock and the data id is hardcoded in the code. Please feel free to modify if other data is used.
